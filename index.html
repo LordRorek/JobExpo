@@ -7,7 +7,7 @@
     <title>Slek - Chat and Discussion Platform</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="./dist/media/img/favicon.png" type="image/png">
+    <link rel="icon" href="https://tao.ai/wp-content/uploads/2020/06/tao_sq_2_128.png" type="image/png">
 
     <!-- Bundle Styles -->
     <link rel="stylesheet" href="./css/bundle.css">
@@ -16,6 +16,8 @@
 
     <!-- App styles -->
     <link rel="stylesheet" href="./css/app.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -121,20 +123,20 @@
 </div>
 <!-- ./ voice call modal -->
 
-<!-- add friends modal -->
-<div class="modal fade" id="addFriends" tabindex="-1" role="dialog" aria-hidden="true">
+<!-- add JobExpo modal -->
+<div class="modal fade" id="addJobExpo" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-zoom" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">
-                    <i data-feather="user-plus" class="mr-2"></i> Add Friends
+                    <i data-feather="user-plus" class="mr-2"></i> Add JobExpo
                 </h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <i class="ti-close"></i>
                 </button>
             </div>
             <div class="modal-body">
-                <div class="alert alert-info">Send invitations to friends.</div>
+                <div class="alert alert-info">Send invitations to JobExpo.</div>
                 <form>
                     <div class="form-group">
                         <label for="emails" class="col-form-label">Email addresses</label>
@@ -152,7 +154,7 @@
         </div>
     </div>
 </div>
-<!-- ./ add friends modal -->
+<!-- ./ add JobExpo modal -->
 
 <!-- new group modal -->
 <div class="modal fade" id="newGroup" tabindex="-1" role="dialog" aria-hidden="true">
@@ -197,7 +199,7 @@
                             <figure class="avatar" data-toggle="tooltip" title="Bethena Langsdon">
                                 <span class="avatar-title bg-info rounded-circle">B</span>
                             </figure>
-                            <a href="#" title="Add friends">
+                            <a href="#" title="Add JobExpo">
                                 <figure class="avatar">
                                     <span class="avatar-title bg-primary rounded-circle">
                                         <i data-feather="plus"></i>
@@ -279,7 +281,7 @@
                         <div class="form-item custom-control custom-switch">
                             <input type="checkbox" class="custom-control-input" id="customSwitch7">
                             <label class="custom-control-label" for="customSwitch7">Notifications from your
-                                friends</label>
+                                JobExpo</label>
                         </div>
                         <div class="form-item custom-control custom-switch">
                             <input type="checkbox" class="custom-control-input" id="customSwitch8">
@@ -530,68 +532,24 @@
         <div class="nav-group">
             <ul>
                 <li class="logo">
+
                     <a href="#">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                             width="612px" height="612px" viewBox="0 0 612 612"
-                             style="enable-background:new 0 0 612 612;" xml:space="preserve">
-                            <g>
-                                <g id="_x32__26_">
-                                    <g>
-                                    <path d="M401.625,325.125h-191.25c-10.557,0-19.125,8.568-19.125,19.125s8.568,19.125,19.125,19.125h191.25
-                                    c10.557,0,19.125-8.568,19.125-19.125S412.182,325.125,401.625,325.125z M439.875,210.375h-267.75
-                                    c-10.557,0-19.125,8.568-19.125,19.125s8.568,19.125,19.125,19.125h267.75c10.557,0,19.125-8.568,19.125-19.125
-                                    S450.432,210.375,439.875,210.375z M306,0C137.012,0,0,119.875,0,267.75c0,84.514,44.848,159.751,114.75,208.826V612
-                                    l134.047-81.339c18.552,3.061,37.638,4.839,57.203,4.839c169.008,0,306-119.875,306-267.75C612,119.875,475.008,0,306,0z
-                                    M306,497.25c-22.338,0-43.911-2.601-64.643-7.019l-90.041,54.123l1.205-88.701C83.5,414.133,38.25,345.513,38.25,267.75
-                                    c0-126.741,119.875-229.5,267.75-229.5c147.875,0,267.75,102.759,267.75,229.5S453.875,497.25,306,497.25z"/>
-                                    </g>
-                                </g>
-                            </g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                        </svg>
+	                    <img src="https://tao.ai/wp-content/uploads/2020/06/tao_sq_5_128.png" width=52>
                     </a>
                 </li>
                 <li>
-                    <a class="active" data-navigation-target="chats" href="#" data-toggle="tooltip" title="Chats"
-                       data-placement="right">
-                        <span class="badge badge-warning"></span>
-                        <i data-feather="message-circle"></i>
-                    </a>
-                </li>
-                <li>
-                    <a data-navigation-target="friends" href="#" data-toggle="tooltip"
-                       title="Friends" data-placement="right">
+                    <a class="active" data-navigation-target="jobexpo" href="#" data-toggle="tooltip" title="JobExpo" data-placement="right">
                         <span class="badge badge-danger"></span>
-                        <i data-feather="user"></i>
-                    </a>
-                </li>
-                <li>
-                    <a data-navigation-target="favorites" data-toggle="tooltip" title="Favorites" data-placement="right"
-                       href="#">
-                        <i data-feather="star"></i>
+                        <i data-feather="briefcase"></i>
                     </a>
                 </li>
                 <li class="brackets">
-                    <a data-navigation-target="archived" href="#" data-toggle="tooltip"
-                       title="Archived" data-placement="right">
-                        <i data-feather="archive"></i>
+                    <a data-navigation-target="chats" href="#" data-toggle="tooltip" title="Chats" data-placement="right">
+                        <span class="badge badge-warning"></span>
+                        <i data-feather="coffee"></i>
                     </a>
                 </li>
+
                 <li>
                     <a href="#" class="dark-light-switcher" data-toggle="tooltip" title="Dark mode"
                        data-placement="right">
@@ -599,16 +557,13 @@
                     </a>
                 </li>
                 <li data-toggle="tooltip" title="User menu" data-placement="right">
-                    <a href="./login.html" data-toggle="dropdown">
+                    <a data-toggle="dropdown">
                         <figure class="avatar">
                             <img src="http://via.placeholder.com/128X128" class="rounded-circle" alt="image">
                         </figure>
                     </a>
                     <div class="dropdown-menu">
-                        <a href="#" class="dropdown-item" data-toggle="modal" data-target="#editProfileModal">Edit
-                            profile</a>
-                        <a href="#" class="dropdown-item" data-navigation-target="contact-information">Profile</a>
-                        <a href="#" class="dropdown-item" data-toggle="modal" data-target="#settingModal">Settings</a>
+                        <a data-navigation-target="settings" href="#settings" data-toggle="tooltip" title="Settings" data-placement="right" class="dropdown-item">Settings</a>
                         <div class="dropdown-divider"></div>
                         <a href="login.html" class="dropdown-item text-danger">Logout</a>
                     </div>
@@ -625,7 +580,7 @@
         <div class="sidebar-group">
 
             <!-- Chats sidebar -->
-            <div id="chats" class="sidebar active">
+            <div id="chats" class="sidebar">
                 <header>
                     <span>Chats</span>
                     <ul class="list-inline">
@@ -636,7 +591,7 @@
                         </li>
                         <li class="list-inline-item">
                             <a class="btn btn-outline-light" data-toggle="tooltip" title="New chat" href="#"
-                               data-navigation-target="friends">
+                               data-navigation-target="jobexpo">
                                 <i data-feather="plus-circle"></i>
                             </a>
                         </li>
@@ -1002,13 +957,13 @@
             </div>
             <!-- ./ Chats sidebar -->
 
-            <!-- Friends sidebar -->
-            <div id="friends" class="sidebar">
+            <!-- JobExpo sidebar -->
+            <div id="jobexpo" class="sidebar active">
                 <header>
-                    <span>Friends</span>
+                    <span>Job Expo</span>
                     <ul class="list-inline">
-                        <li class="list-inline-item" data-toggle="tooltip" title="Add friends">
-                            <a class="btn btn-outline-light" href="#" data-toggle="modal" data-target="#addFriends">
+                        <li class="list-inline-item" data-toggle="tooltip" title="Add JobExpo">
+                            <a class="btn btn-outline-light" href="#" data-toggle="modal" data-target="#addJobExpo">
                                 <i data-feather="user-plus"></i>
                             </a>
                         </li>
@@ -1020,7 +975,7 @@
                     </ul>
                 </header>
                 <form>
-                    <input type="text" class="form-control" placeholder="Search friends">
+                    <input type="text" class="form-control" placeholder="Search JobExpo">
                 </form>
                 <div class="sidebar-body">
                     <ul class="list-group list-group-flush">
@@ -1317,12 +1272,12 @@
                     </ul>
                 </div>
             </div>
-            <!-- ./ Friends sidebar -->
+            <!-- ./ JobExpo sidebar -->
 
-            <!-- Favorites sidebar -->
-            <div id="favorites" class="sidebar">
+            <!-- Settings sidebar -->
+            <div id="settings" class="sidebar">
                 <header>
-                    <span>Favorites</span>
+                    <span>Settings</span>
                     <ul class="list-inline">
                         <li class="list-inline-item d-xl-none d-inline">
                             <a href="#" class="btn btn-outline-light text-danger sidebar-close">
@@ -1331,99 +1286,44 @@
                         </li>
                     </ul>
                 </header>
-                <form>
-                    <input type="text" class="form-control" placeholder="Search favorites">
-                </form>
                 <div class="sidebar-body">
                     <ul class="list-group list-group-flush users-list">
-                        <li class="list-group-item">
+                        <li id="personal-item" class="list-group-item" data-navigation-target="personal-settings">
                             <div class="users-list-body">
                                 <div>
-                                    <h5>Jennica Kindred</h5>
-                                    <p>I know how important this file is to you. You can trust me ;)</p>
-                                </div>
-                                <div class="users-list-action">
-                                    <div class="action-toggle">
-                                        <div class="dropdown">
-                                            <a data-toggle="dropdown" href="#">
-                                                <i data-feather="more-horizontal"></i>
-                                            </a>
-                                            <div class="dropdown-menu dropdown-menu-right">
-                                                <a href="#" class="dropdown-item">Open</a>
-                                                <a href="#" class="dropdown-item">Remove favorites</a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <h5>Personal Settings</h5>
+                                    <p>Add your personal settings information here!</p>
                                 </div>
                             </div>
                         </li>
-                        <li class="list-group-item">
+                        <li class="list-group-item" data-navigation-target="skills-settings">
                             <div class="users-list-body">
                                 <div>
-                                    <h5>Marvin Rohan</h5>
-                                    <p>Lorem ipsum dolor sitsdc sdcsdc sdcsdcs</p>
-                                </div>
-                                <div class="users-list-action">
-                                    <div class="action-toggle">
-                                        <div class="dropdown">
-                                            <a data-toggle="dropdown" href="#">
-                                                <i data-feather="more-horizontal"></i>
-                                            </a>
-                                            <div class="dropdown-menu dropdown-menu-right">
-                                                <a href="#" class="dropdown-item">Open</a>
-                                                <a href="#" class="dropdown-item">Remove favorites</a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <h5>Skills Settings</h5>
+                                    <p>Add your skills settings information here!</p>
                                 </div>
                             </div>
                         </li>
-                        <li class="list-group-item">
+                        <li class="list-group-item" data-navigation-target="company-settings">
                             <div class="users-list-body">
                                 <div>
-                                    <h5>Frans Hanscombe</h5>
-                                    <p>Lorem ipsum dolor sitsdc sdcsdc sdcsdcs</p>
-                                </div>
-                                <div class="users-list-action">
-                                    <div class="action-toggle">
-                                        <div class="dropdown">
-                                            <a data-toggle="dropdown" href="#">
-                                                <i data-feather="more-horizontal"></i>
-                                            </a>
-                                            <div class="dropdown-menu dropdown-menu-right">
-                                                <a href="#" class="dropdown-item">Open</a>
-                                                <a href="#" class="dropdown-item">Remove favorites</a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <h5>Company Settings</h5>
+                                    <p>Add your company settings information here!</p>
                                 </div>
                             </div>
                         </li>
-                        <li class="list-group-item">
+                        <li class="list-group-item" data-navigation-target="jobexpo-settings">
                             <div class="users-list-body">
                                 <div>
-                                    <h5>Karl Hubane</h5>
-                                    <p>Lorem ipsum dolor sitsdc sdcsdc sdcsdcs</p>
-                                </div>
-                                <div class="users-list-action">
-                                    <div class="action-toggle">
-                                        <div class="dropdown">
-                                            <a data-toggle="dropdown" href="#">
-                                                <i data-feather="more-horizontal"></i>
-                                            </a>
-                                            <div class="dropdown-menu dropdown-menu-right">
-                                                <a href="#" class="dropdown-item">Open</a>
-                                                <a href="#" class="dropdown-item">Remove favorites</a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <h5>JobExpo Settings</h5>
+                                    <p>Add your jobexpo settings here!</p>
                                 </div>
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
-            <!-- ./ Stars sidebar -->
+            <!-- ./ Settings sidebar -->
 
             <!-- Archived sidebar -->
             <div id="archived" class="sidebar">
@@ -1503,7 +1403,7 @@
         <!-- ./ sidebar group -->
 
         <!-- chat -->
-        <div class="chat">
+        <div id="chat"  class="chat">
             <div class="chat-header">
                 <div class="chat-header-user">
                     <figure class="avatar">
@@ -1784,6 +1684,53 @@
         </div>
         <!-- ./ chat -->
 
+        <!--  personal settings -->
+        <div id="personal-item-settings" class="chat delete">
+            <div class="chat-header">
+                <div class="chat-header-user">
+                    <figure class="avatar">
+                    </figure>
+                    <div>
+                        <h5>Personal Settings</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-body"> <!-- .no-message -->
+
+                <div class="no-message-container">
+                    <div class="row mb-5">
+                        <div class="col-md-4 offset-4">
+                            <img src="./dist/media/svg/undraw_empty_xct9.svg" class="img-fluid" alt="image">
+                        </div>
+                    </div>
+                    <p class="lead">Personal settings not added yet.</p>
+                </div>
+            </div>
+            <div class="chat-footer">
+                <form>
+                    <div>
+                        <button class="btn btn-light mr-3" data-toggle="tooltip" title="Emoji" type="button">
+                            <i data-feather="smile"></i>
+                        </button>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Write a message.">
+                    <div class="form-buttons">
+                        <button class="btn btn-light" data-toggle="tooltip" title="Add files" type="button">
+                            <i data-feather="paperclip"></i>
+                        </button>
+                        <button class="btn btn-light d-sm-none d-block" data-toggle="tooltip"
+                                title="Send a voice record" type="button">
+                            <i data-feather="mic"></i>
+                        </button>
+                        <button class="btn btn-primary" type="submit">
+                            <i data-feather="send"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- ./ personal settings -->
+
         <div class="sidebar-group">
             <div id="contact-information" class="sidebar">
                 <header>
@@ -1968,5 +1915,10 @@
 
 <!-- Examples -->
 <script src="./js/examples.js"></script>
+
+<!-- Custom -->
+<script src="./js/custom.js"></script>
+
+
 </body>
 </html>
