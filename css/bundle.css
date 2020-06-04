@@ -9138,8 +9138,11 @@ a.text-dark:hover {
   border-color:#dee2e6
  }
 }
-.delete{
+.delete {
    display: none !important;
+}
+#the-count {
+  float: right;
 }
 
 /*# sourceMappingURL=bootstrap.min.css.map */
