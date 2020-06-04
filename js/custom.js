@@ -58,8 +58,11 @@ $(document).ready(function() {
   });
 });
 
-function countChar(val) {
+function countChar1(val) {
   var len = val.value.length;
-  $('#current').text(len);
-
+  $('#current1').text(len);
+};
+function countChar2(val) {
+  var len = val.value.length;
+  $('#current2').text(len);
 };
