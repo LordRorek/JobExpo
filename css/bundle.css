@@ -9144,5 +9144,9 @@ a.text-dark:hover {
 #the-count {
   float: right;
 }
+#add-button{
+  float: right !important;
+  text-align: right;
+};
 
 /*# sourceMappingURL=bootstrap.min.css.map */

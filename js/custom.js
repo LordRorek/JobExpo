@@ -2,6 +2,14 @@ var chat = document.getElementById("chat");
 var personal = document.getElementById("item-1");
 var statement = $( "#settings" ).hasClass('active');
 
+function chatRestore(){
+  $(chat).removeClass('delete');
+  $(document.getElementById("item-1-settings")).addClass('delete');
+  $(document.getElementById("item-2-settings")).addClass('delete');
+  $(document.getElementById("item-3-settings")).addClass('delete');
+  $(document.getElementById("item-4-settings")).addClass('delete');
+};
+
 $(document).ready(function(){
   $( "#settings" ).click(function() {
     setTimeout(check, 0.0000001)
@@ -14,48 +22,41 @@ $(document).ready(function(){
       $(document.getElementById("item-2-settings")).addClass('delete');
       $(document.getElementById("item-3-settings")).addClass('delete');
       $(document.getElementById("item-4-settings")).addClass('delete');
-      console.log("HELLO!");
     };
   };
 });
+
+function settingsRestore(set){
+  $(chat).addClass('delete');
+  var target = "#" + $(set).attr('class').split(' ')[0] + "-settings"
+  var siblings = $(set).siblings()
+  $(target).removeClass('delete');
+  $(siblings).each(function() {
+    var item = "#" + $(this).attr('class').split(' ')[0] + "-settings"
+    $(item).addClass('delete');
+  });
+};
+
 $(document).ready(function() {
   $('.item-1').click(function() {
-    var target = "#" + $(this).attr('class').split(' ')[0] + "-settings"
-    var siblings = $(this).siblings()
-    $(target).removeClass('delete');
-    $(siblings).each(function() {
-      var item = "#" + $(this).attr('class').split(' ')[0] + "-settings"
-      $(item).addClass('delete');
-    });
+    settingsRestore(this);
   });
   $('.item-2').click(function() {
-    $(chat).addClass('delete');
-    var target = "#" + $(this).attr('class').split(' ')[0] + "-settings"
-    var siblings = $(this).siblings()
-    $(target).removeClass('delete');
-    $(siblings).each(function() {
-      var item = "#" + $(this).attr('class').split(' ')[0] + "-settings"
-      $(item).addClass('delete');
-    });
+    settingsRestore(this);
   });
   $('.item-3').click(function() {
-    var target = "#" + $(this).attr('class').split(' ')[0] + "-settings"
-    var siblings = $(this).siblings()
-    $(target).removeClass('delete');
-    $(siblings).each(function() {
-      var item = "#" + $(this).attr('class').split(' ')[0] + "-settings"
-      $(item).addClass('delete');
-    });
+    settingsRestore(this);
   });
   $('.item-4').click(function() {
-    var target = "#" + $(this).attr('class').split(' ')[0] + "-settings"
-    var siblings = $(this).siblings()
-    $(target).removeClass('delete');
-    $(siblings).each(function() {
-      var item = "#" + $(this).attr('class').split(' ')[0] + "-settings"
-      $(item).addClass('delete');
-    });
+    settingsRestore(this);
   });
+});
+
+$('#expo').click(function() {
+  chatRestore();
+});
+$('#chats').click(function() {
+  chatRestore();
 });
 
 function countChar1(val) {
@@ -66,3 +67,11 @@ function countChar2(val) {
   var len = val.value.length;
   $('#current2').text(len);
 };
+
+fetch("./settings.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    $(".content").append(data);
+  });
