@@ -9149,4 +9149,6 @@ a.text-dark:hover {
   text-align: right;
 };
 
-/*# sourceMappingURL=bootstrap.min.css.map */
+#select{
+  margin: 5px;
+};
