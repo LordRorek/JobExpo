@@ -67,11 +67,3 @@ function countChar2(val) {
   var len = val.value.length;
   $('#current2').text(len);
 };
-
-fetch("./settings.html")
-  .then(response => {
-    return response.text()
-  })
-  .then(data => {
-    $(".content").append(data);
-  });
