@@ -14,14 +14,29 @@
         <div class="tab-pane active" id="about" role="tabpanel">
           <form>
               <div class="form-group">
-                <label for="about-text" class="col-form-label">LinkedIn Profile</label>
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Username">
-                    <div class="input-group-append">
-                      <span class="input-group-text">
+                  <div id="items">
+                    <label id="items" for="firstname" class="col-form-label" >First Name</label>
+                    <div class="input-group">
+                      <input id="firstname" type="text" class="form-control">
+                      <div class="input-group-append">
+                        <span class="input-group-text">
                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                      </span>
+                        </span>
+                      </div>
                     </div>
+                  </div>
+                  <div id="items">
+                    <label id="items" for="lastname" class="col-form-label" >Last Name</label>
+                    <div class="input-group">
+                      <input id="lastname" type="text" class="form-control">
+                      <div class="input-group-append">
+                        <span class="input-group-text">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="form-group">
@@ -36,14 +51,29 @@
                 </div>
               </div>
               <div class="form-group">
-                <label for="city" class="col-form-label">Location</label>
                 <div class="input-group">
-                    <input type="text" class="form-control" id="city" placeholder="Ex: Columbia">
-                    <div class="input-group-append">
+                  <div id="items">
+                    <label for="about-text" class="col-form-label">LinkedIn Profile</label>
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Username">
+                      <div class="input-group-append">
                         <span class="input-group-text">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-target"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><path d="M2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
                         </span>
+                      </div>
                     </div>
+                  </div>
+                  <div id="items">
+                    <label for="city" class="col-form-label">Location</label>
+                    <div class="input-group">
+                      <input type="text" class="form-control" id="city" placeholder="Ex: Columbia">
+                      <div class="input-group-append">
+                          <span class="input-group-text">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-target"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                          </span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="form-group">
@@ -78,49 +108,63 @@
       <form>
         <div class="form-group">
           <div class="input-group">
-            <label for="skill" class="col-form-label" style="flex: auto;">Skill</label>
-            <label id="skills" for="expertise" class="col-form-label" style="flex: auto;">Expertise</label>
-            <label id="skills" for="experience" class="col-form-label" style="flex: auto;">Experience</label>
-            <label id="skills" for="importance" class="col-form-label" style="flex: auto;">Importance</label>
-          </div>
-          <div class="input-group">
-            <input id="skill" type="text" class="form-control" style="flex: auto; margin-left:5px;">
-            <select class="form-control" name="expertise" id="select" style="flex: auto; margin-left:5px;">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-            </select>
-            <select class="form-control" name="experience" id="select" style="flex: auto; margin-left:5px;">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-            </select>
-            <select class="form-control" name="importance" id="select" style="flex: auto; margin-left:5px;">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-            </select>
+            <div id="items">
+              <label for="skill" class="col-form-label" >Skill</label>
+              <div class="input-group">
+                <input id="skill" type="text" class="form-control">
+              </div>
+            </div>
+            <div id="items">
+              <label for="expertise" class="col-form-label" >Expertise</label>
+              <div class="input-group">
+                <select class="form-control" name="expertise" id="select">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+            </div>
+            <div id="items">
+              <label for="experience" class="col-form-label" >Experience</label>
+              <div class="input-group">
+                <select class="form-control" name="expertise" id="select">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+            </div>
+            <div id="items">
+              <label for="importance" class="col-form-label" >Importance</label>
+              <div class="input-group">
+                <select class="form-control" name="expertise" id="select">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+            </div>
           </div>
         </div>
         <div class="modal-footer">
@@ -145,25 +189,55 @@
     <div class="chat-body">
       <form>
         <div class="form-group">
-          <label for="fullname" class="col-form-label">Name</label>
           <div class="input-group">
-              <input type="text" class="form-control" id="fullname">
-              <div class="input-group-append">
+            <div id="items">
+              <label id="items" for="firstname" class="col-form-label" >First Name</label>
+              <div class="input-group">
+                <input id="firstname" type="text" class="form-control">
+                <div class="input-group-append">
                   <span class="input-group-text">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                   </span>
+                </div>
               </div>
+            </div>
+            <div id="items">
+              <label id="items" for="lastname" class="col-form-label" >Last Name</label>
+              <div class="input-group">
+                <input id="lastname" type="text" class="form-control">
+                <div class="input-group-append">
+                  <span class="input-group-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="form-group">
-          <label for="website" class="col-form-label">Website</label>
           <div class="input-group">
-              <input type="text" class="form-control" id="website" placeholder="https://">
-              <div class="input-group-append">
-                  <span class="input-group-text">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-                  </span>
+            <div id="items">
+              <label for="email" class="col-form-label">Email</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="email" placeholder="example@domain.com">
+                <div class="input-group-append">
+                    <span class="input-group-text">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </span>
+                </div>
               </div>
+            </div>
+            <div id="items">
+              <label for="website" class="col-form-label">Website</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="website" placeholder="https://">
+                <div class="input-group-append">
+                    <span class="input-group-text">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                    </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="form-group">

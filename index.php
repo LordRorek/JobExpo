@@ -11,12 +11,14 @@ echo '<!doctype html>
     <link rel="icon" href="https://tao.ai/wp-content/uploads/2020/06/tao_sq_2_128.png" type="image/png">
 
     <!-- Bundle Styles -->
-    <link rel="stylesheet" href="./css/bundle.css?v=1.1">
+    <link rel="stylesheet" href="./css/bundle.css">
 
-    <link rel="stylesheet" href="./css/enjoyhint.css?v=1.1">
+    <link rel="stylesheet" href="./css/enjoyhint.css">
 
     <!-- App styles -->
-    <link rel="stylesheet" href="./css/app.min.css?v=1.1">
+    <link rel="stylesheet" href="./css/app.min.css">
+
+    <link rel="stylesheet" href="./css/custom.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
