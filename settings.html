@@ -77,12 +77,21 @@
                 </div>
               </div>
               <div class="form-group">
-                  <label for="about-text" class="col-form-label">Description</label>
-                  <div id="the-count">
-                    <span id="current1">0</span>
-                    <span id="maximum">/ 140</span>
+                <div class="input-group">
+                  <div id="items">
+                    <label id="items" for="videochat" class="col-form-label" >Video Chat Platform</label>
+                    <select class="form-control" id="videochat" name="videochat" required="">
+                      <option value="hangout" selected="">Google Hangout</option>
+                      <option value="skype">Skype</option>
+                    </select>
                   </div>
-                  <textarea class="description form-control" id="about-text" spellcheck="false" maxlength="140" onkeyup="countChar1(this);"></textarea>
+                  <div id="items">
+                    <label id="items" for="videochatid" class="col-form-label" >Video Chat ID</label>
+                    <div class="input-group">
+                      <input type="text" class="form-control" id="videochatid" name="videochatid" placeholder="" value="998098098" required="">
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-primary">Submit</button>
@@ -175,8 +184,90 @@
 </div>
 <!-- ./ skills settings -->
 
-<!--  company settings -->
+<!--  school settings -->
 <div id="item-3-settings" class="chat delete">
+    <div class="chat-header">
+        <div class="chat-header-user">
+            <figure class="avatar">
+            </figure>
+            <div>
+                <h5>School Settings</h5>
+            </div>
+        </div>
+    </div>
+    <div class="chat-body" style="overflow: hidden; outline: currentcolor none medium;" tabindex="8">
+      <form>
+        <div class="form-group">
+          <div class="input-group">
+            <div id="items">
+              <label for="name" class="col-form-label" >School:</label>
+              <div class="input-group">
+                <input id="name" name="name" type="text" class="form-control">
+              </div>
+            </div>
+            <div id="items">
+              <label for="jobtitle" class="col-form-label" >Major:</label>
+              <div class="input-group">
+                <input id="title" name="title" type="text" class="form-control">
+              </div>
+            </div>
+            <div id="items">
+              <label for="degree" class="col-form-label" >Degree:</label>
+              <div class="input-group">
+                <select class="form-control" id="degree" name="degree">
+                  <option value="pick">Pick One</option>
+                  <option value="ph">Doctorate</option>
+                  <option value="ma">Master's</option>
+                  <option value="ba">Bachelor's</option>
+                  <option value="as">Associate's</option>
+                  <option value="ce">Certificate</option>
+                  <option value="hs">High School Diploma/GED</option>
+								</select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <div id="items">
+              <label for="group" class="col-form-label" >Department:</label>
+              <div class="input-group">
+                <input id="group" name="group" type="text" class="form-control">
+              </div>
+            </div>
+            <div id="items">
+              <label for="from_date" class="col-form-label" >From:</label>
+              <div class="input-group">
+                <input class="form-control" type="date" id="from_date" name="from_date">
+              </div>
+            </div>
+            <div id="items">
+              <label for="to_date" class="col-form-label" >To:</label>
+              <div class="input-group">
+                <input class="form-control" type="date" id="to_date" name="to_date">
+              </div>
+            </div>
+            <div id="items">
+              <label for="to_date_current" class="col-form-label" >Still studying here?</label>
+              <div class="input-group">
+                <select class="form-control" id="to_date_current" name="to_date_current">
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+								</select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Add</button>
+        </div>
+      </form>
+    </div>
+</div>
+<!-- ./ school settings -->
+
+<!--  company settings -->
+<div id="item-4-settings" class="chat delete">
     <div class="chat-header">
         <div class="chat-header-user">
             <figure class="avatar">
@@ -185,31 +276,40 @@
                 <h5>Company Settings</h5>
             </div>
         </div>
+
     </div>
-    <div class="chat-body">
+    <div class="chat-body" style="overflow: hidden; outline: currentcolor none medium;" tabindex="8">
       <form>
         <div class="form-group">
           <div class="input-group">
             <div id="items">
-              <label id="items" for="firstname" class="col-form-label" >First Name</label>
+              <label for="companyname" class="col-form-label" >Company Name</label>
               <div class="input-group">
-                <input id="firstname" type="text" class="form-control">
-                <div class="input-group-append">
-                  <span class="input-group-text">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                  </span>
-                </div>
+                <input id="companyname" type="text" class="form-control">
               </div>
             </div>
             <div id="items">
-              <label id="items" for="lastname" class="col-form-label" >Last Name</label>
+              <label for="jobtitle" class="col-form-label" >Job Title</label>
               <div class="input-group">
-                <input id="lastname" type="text" class="form-control">
-                <div class="input-group-append">
-                  <span class="input-group-text">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                  </span>
-                </div>
+                <input id="jobtitle" type="text" class="form-control">
+              </div>
+            </div>
+            <div id="items">
+              <label for="seniority" class="col-form-label" >Seniority Level</label>
+              <div class="input-group">
+                <select class="form-control" id="seniority" name="seniority">
+                  <option value="pick">Pick One</option>
+                  <option value="owner">Owner</option>
+                  <option value="partner">Partner</option>
+                  <option value="cxo">CXO</option>
+                  <option value="vp">VP</option>
+                  <option value="director">Director</option>
+                  <option value="manager">Manager</option>
+                  <option value="senior">Senior</option>
+                  <option value="entry">Entry</option>
+                  <option value="training">Training</option>
+                  <option value="unpaid">Unpaid</option>
+								</select>
               </div>
             </div>
           </div>
@@ -217,72 +317,32 @@
         <div class="form-group">
           <div class="input-group">
             <div id="items">
-              <label for="email" class="col-form-label">Email</label>
+              <label for="from_date" class="col-form-label" >From:</label>
               <div class="input-group">
-                <input type="text" class="form-control" id="email" placeholder="example@domain.com">
-                <div class="input-group-append">
-                    <span class="input-group-text">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                    </span>
-                </div>
+                <input class="form-control" type="date" id="from_date" name="from_date">
               </div>
             </div>
             <div id="items">
-              <label for="website" class="col-form-label">Website</label>
+              <label for="to_date" class="col-form-label" >To:</label>
               <div class="input-group">
-                <input type="text" class="form-control" id="website" placeholder="https://">
-                <div class="input-group-append">
-                    <span class="input-group-text">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-activity"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-                    </span>
-                </div>
+                <input class="form-control" type="date" id="to_date" name="to_date">
+              </div>
+            </div>
+            <div id="items">
+              <label for="to_date_current" class="col-form-label" >Still working here?</label>
+              <div class="input-group">
+                <select class="form-control" id="to_date_current" name="to_date_current">
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+								</select>
               </div>
             </div>
           </div>
         </div>
-        <div class="form-group">
-          <label class="col-form-label">Logo</label>
-          <div class="d-flex align-items-center">
-              <div>
-                  <figure class="avatar mr-3 item-rtl">
-                      <img src="http://via.placeholder.com/128X128" class="rounded-circle" alt="image">
-                  </figure>
-              </div>
-              <div class="custom-file">
-                  <input type="file" class="custom-file-input" id="customFile">
-                  <label class="custom-file-label" for="customFile">Choose file</label>
-              </div>
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="about-text" class="col-form-label">Description</label>
-          <div id="the-count">
-            <span id="current2">0</span>
-            <span id="maximum">/ 140</span>
-          </div>
-          <textarea class="description form-control" id="about-text" spellcheck="false" maxlength="140" onkeyup="countChar2(this);"></textarea>
-        </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Submit</button>
+          <button type="button" class="btn btn-primary">Add</button>
         </div>
       </form>
     </div>
 </div>
 <!-- ./ company settings -->
-
-<!--  JobExpo settings -->
-<div id="item-4-settings" class="chat delete">
-    <div class="chat-header">
-        <div class="chat-header-user">
-            <figure class="avatar">
-            </figure>
-            <div>
-                <h5>JobExpo Settings</h5>
-            </div>
-        </div>
-    </div>
-    <div class="chat-body">
-
-    </div>
-</div>
-<!-- ./ JobExpo settings -->

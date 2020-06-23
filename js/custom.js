@@ -59,10 +59,6 @@ $('#chats').click(function() {
   chatRestore();
 });
 
-function countChar1(val) {
-  var len = val.value.length;
-  $('#current1').text(len);
-};
 function countChar2(val) {
   var len = val.value.length;
   $('#current2').text(len);
