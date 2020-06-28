@@ -8,6 +8,7 @@ function chatRestore(){
   $(document.getElementById("item-2-settings")).addClass('delete');
   $(document.getElementById("item-3-settings")).addClass('delete');
   $(document.getElementById("item-4-settings")).addClass('delete');
+  $(document.getElementById("item-5-settings")).addClass('delete');
 };
 
 $(document).ready(function(){
@@ -22,6 +23,7 @@ $(document).ready(function(){
       $(document.getElementById("item-2-settings")).addClass('delete');
       $(document.getElementById("item-3-settings")).addClass('delete');
       $(document.getElementById("item-4-settings")).addClass('delete');
+      $(document.getElementById("item-5-settings")).addClass('delete');
     };
   };
 });
@@ -48,6 +50,9 @@ $(document).ready(function() {
     settingsRestore(this);
   });
   $('.item-4').click(function() {
+    settingsRestore(this);
+  });
+  $('.item-5').click(function() {
     settingsRestore(this);
   });
 });

@@ -7,6 +7,9 @@ echo '<!doctype html>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JobExpo</title>
 
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+
     <!-- Favicon -->
     <link rel="icon" href="https://tao.ai/wp-content/uploads/2020/06/tao_sq_2_128.png" type="image/png">
 
@@ -18,9 +21,11 @@ echo '<!doctype html>
     <!-- App styles -->
     <link rel="stylesheet" href="./css/app.min.css">
 
+    <!-- Custom JS -->
     <link rel="stylesheet" href="./css/custom.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 <body>
 
