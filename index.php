@@ -9,6 +9,7 @@ echo '<!doctype html>
 
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Favicon -->
     <link rel="icon" href="https://tao.ai/wp-content/uploads/2020/06/tao_sq_2_128.png" type="image/png">
@@ -25,6 +26,7 @@ echo '<!doctype html>
     <link rel="stylesheet" href="./css/custom.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link href="./css/jquery.multiselect.css" rel="stylesheet" type="text/css">
 
 </head>
 <body>
@@ -266,8 +268,13 @@ echo '</div>
 
 <!-- Custom -->
 <script src="./js/custom.js"></script>
-
-
+<script src="./js/jquery.multiselect.js"></script>
+<script>
+  $("select[multiple]").multiselect({
+      columns: 2,
+      placeholder: "Select options"
+  });
+</script>
 </body>
 </html>
 ';
